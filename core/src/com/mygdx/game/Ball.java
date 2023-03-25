@@ -24,7 +24,7 @@ public class Ball {
         fixtureDef.shape = circle;
         fixtureDef.density = 0.5f;
         fixtureDef.friction = 0.4f;
-        fixtureDef.restitution = 0.8f; // Make it bounce a little bit
+        fixtureDef.restitution = 0.6f; // Make it bounce a little bit
 
         Fixture fixture = body.createFixture(fixtureDef);
 
