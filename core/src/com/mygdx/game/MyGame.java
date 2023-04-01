@@ -16,7 +16,7 @@ import com.badlogic.gdx.utils.ScreenUtils;
 import java.util.ArrayList;
 
 public class MyGame extends Game {
-	public static final float WIDTH = 16, HEIGHT = 9;
+	public static final float WIDTH = 160/3, HEIGHT = 90/3;
 	SpriteBatch batch;
 	OrthographicCamera camera;
 	Vector3 touch;
@@ -55,7 +55,7 @@ public class MyGame extends Game {
 			System.out.println(""+touch.x+" "+ touch.y);
 			for (int i = 0; i < ball.size(); i++) {
 				if(ball.get(i).hit(touch.x, touch.y)){
-					ball.get(i).body.applyLinearImpulse(0, 5f, ball.get(i).getX(), ball.get(i).getY(), true);
+					ball.get(i).body.applyLinearImpulse(0, 50f, ball.get(i).getX(), ball.get(i).getY(), true);
 					System.out.println("попали"+touch.x+" "+ touch.y);
 				}
 			}
